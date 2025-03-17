@@ -26,8 +26,8 @@ mvn clean install
 Configuration
 Update application.yml file with your database configurations.
 set environment variable for below:
-${TARGET_HOST} - target ip address
-${SOURCE_HOST} - source ip address
+1)${TARGET_HOST} - target ip address
+2)${SOURCE_HOST} - source ip address
 
 Running the Application
 Run the application using the following command:
