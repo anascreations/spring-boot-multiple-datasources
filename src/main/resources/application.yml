@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: multiple-ds-service
+  datasource:
+    primary:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://${TARGET_HOST}:5432/target_db
+      username: pg_user
+      password: password
+      type: com.zaxxer.hikari.HikariDataSource
+      hikari:
+        connectionTimeout: 60000
+        maximumPoolSize: 20
+        poolName: primary-pool
+        minimumIdle: 10
+        idleTimeout: 600000
+        maxLifetime: 1800000
+        autoCommit: true
+        connectionTestQuery: SELECT 1
+    secondary:
+      driverClassName: oracle.jdbc.OracleDriver
+      url: jdbc:oracle:thin:@//${SOURCE_HOST}:1521/source_db
+      username: orcl_user
+      password: password
+      type: com.zaxxer.hikari.HikariDataSource
+      hikari:
+        connectionTimeout: 60000
+        maximumPoolSize: 20
+        poolName: secondary-pool
+        minimumIdle: 10
+        idleTimeout: 600000
+        maxLifetime: 1800000
+        connectionTestQuery: SELECT 1 FROM DUAL
