@@ -1,4 +1,4 @@
-package com.multiple.ds.service.config;
+package com.multiple.datasource.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,10 +24,10 @@ import jakarta.persistence.EntityManagerFactory;
 @Configuration
 @EnableTransactionManagement
 public class DataSourceConfig {
-	private static final String PRIMARY_ENTITY_PACKAGE = "com.multiple.ds.service.entity.primary";
-	private static final String SECONDARY_ENTITY_PACKAGE = "com.multiple.ds.service.entity.secondary";
-	private static final String PRIMARY_REPOSITORY_PACKAGE = "com.multiple.ds.service.repository.primary";
-	private static final String SECONDARY_REPOSITORY_PACKAGE = "com.multiple.ds.service.repository.secondary";
+	private static final String PRIMARY_ENTITY_PACKAGE = "com.multiple.datasource.entity.primary";
+	private static final String SECONDARY_ENTITY_PACKAGE = "com.multiple.datasource.entity.secondary";
+	private static final String PRIMARY_REPOSITORY_PACKAGE = "com.multiple.datasource.repository.primary";
+	private static final String SECONDARY_REPOSITORY_PACKAGE = "com.multiple.datasource.repository.secondary";
 
 	@Configuration
 	@EnableJpaRepositories(basePackages = PRIMARY_REPOSITORY_PACKAGE, entityManagerFactoryRef = "primaryEmf", transactionManagerRef = "primaryTm")

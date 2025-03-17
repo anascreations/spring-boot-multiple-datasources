@@ -1,0 +1,11 @@
+/.classpath
+/.factorypath
+/.project
+/.settings
+/target
+/.temp*
+/.class
+/.log
+/*.log
+/*.gz
+/*.vscode

@@ -1,4 +1,4 @@
-package com.multiple.ds.service;
+package com.multiple.datasource;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

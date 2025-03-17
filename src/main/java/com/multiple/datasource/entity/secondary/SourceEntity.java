@@ -1,4 +1,4 @@
-package com.multiple.ds.service.entity.secondary;
+package com.multiple.datasource.entity.secondary;
 
 import java.io.Serializable;
 

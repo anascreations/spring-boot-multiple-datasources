@@ -1,6 +1,6 @@
 spring:
   application:
-    name: multiple-ds-service
+    name: multiple-datasource-service
   datasource:
     primary:
       driverClassName: org.postgresql.Driver
